@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  scroll-padding-top: 100px;
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 16px 5%;
+  background-color: #ffffff;
+  border-bottom: 2px solid #ccc;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.judul {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: #004d00;
+}
+
+nav {
+  margin-left: auto;
+}
+
+.nav-link {
+  list-style: none;
+  display: flex;
+}
+
+.nav-link li {
+  margin-left: 20px;
+}
+
+.nav-link li a {
+  font-weight: 600;
+  font-size: 15px;
+  color: rgb(3, 2, 2);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.nav-link li a:hover {
+  color: #004d00;
+  border-bottom: 2px solid #004d00;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 80px;
+}
+
+.content {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.image-content {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+article {
+  background-color: #ffffff;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 7px 10px 0 rgba(24, 24, 24, 0.2);
+  border-radius: 5px;
+}
+
+article p {
+  margin: 15px 0;
+  line-height: 1.3;
+}
+
+article img {
+  margin: 16px 0;
+}
+
+aside {
+  flex: 1;
+  background-color: #eeeeee;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  align-self: flex-start;
+}
+
+aside img {
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #d6d6d6;
+  text-align: left;
+}
+
+th {
+  background-color: #f1f1f1;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #004d00;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+  padding: 5px;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  aside {
+    margin-top: 20px;
+  }
+
+  .nav-link {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .nav-link li {
+    margin-left: 10px;
+    margin-top: 0;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .judul {
+    margin-bottom: 10px;
+  }
+}
